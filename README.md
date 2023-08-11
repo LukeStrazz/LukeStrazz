@@ -1,4 +1,1 @@
-Identity Summary:
--Interested in web3 and AI.
--Currently learning Java, C and HTML.
--Reach me @ lukestrazzera@gmail.com 
+![Luke's GitHub stats](https://github-readme-stats.vercel.app/api?username=LukeStrazz&show_icons=true&theme=radical)
