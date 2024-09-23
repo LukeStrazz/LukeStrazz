@@ -1,4 +1,5 @@
 # I'm Luke
+<img align="left" src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif" width="30%" style="display:inline;"><img align="right" src="https://user-images.githubusercontent.com/65187002/144930161-2f783401-8d27-4fdf-a2f7-cc0ba32f1f1f.gif" width="30%" style="display:inline;">
 
 <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=LukeStrazz&amp;rank_icon=github">
 <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LukeStrazz&layout=compact">
