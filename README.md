@@ -3,6 +3,7 @@
 
 <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=LukeStrazz&amp;rank_icon=github">
 <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LukeStrazz&layout=compact">
+<br/><br/><br/>
 <br/>
 
 # Technolgies I Use:
