@@ -1,4 +1,4 @@
-# I'm Luke
+# I'm Luke ![](https://komarev.com/ghpvc/?username=yLukeStrazz&color=blue)
 
 <br/>
 
