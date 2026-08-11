@@ -1,58 +1,149 @@
-# I'm Luke ![](https://komarev.com/ghpvc/?username=yLukeStrazz&color=blue)
+<!--
+  AUTO-GENERATED FILE — do not hand-edit.
+  Source of truth: https://lukestrazz.github.io/resume.json (public/resume.json in the
+  lukestrazz.github.io repo). Update that file — this README regenerates itself via
+  .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
+  Last generated: 2026-08-11
+-->
+
+<div align="center">
+
+<img src="./assets/banner.svg" width="100%" alt="Luke‑Angelo Strazzera — Software Engineer" />
+
+![Visitors](https://komarev.com/ghpvc/?username=LukeStrazz&color=8a6420&style=for-the-badge&label=PROFILE+VIEWS)
+[![Email](https://img.shields.io/badge/Email-0a0a0d?style=for-the-badge&logo=gmail&logoColor=F7D98C)](mailto:lukestrazzera@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a0a0d?style=for-the-badge&logo=linkedin&logoColor=F7D98C)](https://www.linkedin.com/in/luke-angelo-strazzera-83b7171b4)
+[![Website](https://img.shields.io/badge/Portfolio-0a0a0d?style=for-the-badge&logo=firefox&logoColor=F7D98C)](https://lukestrazz.github.io)
+
+</div>
+
+### Software engineer building secure applications, modern interfaces, and production-ready systems — across C#, .NET, React, Azure, AWS, and OpenAI-powered workflows.
+
+**Developer Team Lead** at **Saberin Software**
+
+- **Current Role:** Developer Team Lead · Saberin Software
+- **Focus:** AI features, cloud delivery, identity, full-stack
+- **Trajectory:** Intern to team lead since 2023
 
 <br/>
 
-# Technolgies I Use:
-![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
-![Brave](https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=Brave&logoColor=white)
-![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
-![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
-![Xrp](https://img.shields.io/badge/Xrp-black?style=for-the-badge&logo=xrp&logoColor=white)
+## Tech I work with
+
+**Platforms & Tools**
+
+![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-0a0a0d?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=F7D98C)
+![Figma](https://img.shields.io/badge/Figma-0a0a0d?style=for-the-badge&logo=figma&logoColor=F7D98C)
+![Jira](https://img.shields.io/badge/Jira-0a0a0d?style=for-the-badge&logo=jira&logoColor=F7D98C)
+![Arduino](https://img.shields.io/badge/Arduino-0a0a0d?style=for-the-badge&logo=Arduino&logoColor=F7D98C)
+![Docker](https://img.shields.io/badge/Docker-0a0a0d?style=for-the-badge&logo=docker&logoColor=F7D98C)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0a0a0d?style=for-the-badge&logo=githubactions&logoColor=F7D98C)
+![Azure](https://img.shields.io/badge/Azure-0a0a0d?style=for-the-badge&logo=microsoftazure&logoColor=F7D98C)
+![AWS](https://img.shields.io/badge/AWS-0a0a0d?style=for-the-badge&logo=amazonaws&logoColor=F7D98C)
+
+**Languages & Frameworks**
+
+![C#](https://img.shields.io/badge/C%23-0a0a0d?style=for-the-badge&logo=c-sharp&logoColor=F7D98C)
+![.NET](https://img.shields.io/badge/.NET-0a0a0d?style=for-the-badge&logo=.net&logoColor=F7D98C)
+![C++](https://img.shields.io/badge/C%2B%2B-0a0a0d?style=for-the-badge&logo=c%2B%2B&logoColor=F7D98C)
+![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0d?style=for-the-badge&logo=typescript&logoColor=F7D98C)
+![JavaScript](https://img.shields.io/badge/JavaScript-0a0a0d?style=for-the-badge&logo=javascript&logoColor=F7D98C)
+![React](https://img.shields.io/badge/React-0a0a0d?style=for-the-badge&logo=react&logoColor=F7D98C)
+![HTML5](https://img.shields.io/badge/HTML5-0a0a0d?style=for-the-badge&logo=html5&logoColor=F7D98C)
+![CSS3](https://img.shields.io/badge/CSS3-0a0a0d?style=for-the-badge&logo=css3&logoColor=F7D98C)
+![SQL](https://img.shields.io/badge/SQL-0a0a0d?style=for-the-badge&logo=postgresql&logoColor=F7D98C)
+
+**AI & Automation**
+
+![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-0a0a0d?style=for-the-badge&logo=microsoftazure&logoColor=F7D98C)
+![OpenAI API](https://img.shields.io/badge/OpenAI%20API-0a0a0d?style=for-the-badge&logo=openai&logoColor=F7D98C)
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-0a0a0d?style=for-the-badge&logo=githubcopilot&logoColor=F7D98C)
+
+**IDEs & Workflow**
+
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-0a0a0d?style=for-the-badge&logo=visual-studio&logoColor=F7D98C)
+![VS Code](https://img.shields.io/badge/VS%20Code-0a0a0d?style=for-the-badge&logo=visual-studio-code&logoColor=F7D98C)
+![Git](https://img.shields.io/badge/Git-0a0a0d?style=for-the-badge&logo=git&logoColor=F7D98C)
+![GitHub](https://img.shields.io/badge/GitHub-0a0a0d?style=for-the-badge&logo=github&logoColor=F7D98C)
 
 <br/>
 
-# Technologies I Program With:
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
-![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)
-![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
+## Experience
+
+**Developer Team Lead** · Saberin Software
+<sub>Apr 2025 — Present</sub>
+
+- Lead production development for .NET applications, reviewing code for quality, security, performance, and long-term maintainability.
+- Designed and shipped AI-powered features using Azure OpenAI for both internal workflows and customer-facing experiences.
+- Own Azure delivery across subscriptions, Entra ID, Azure AD B2C, app registrations, Blob Storage, and Data Factory resources.
+
+<details>
+<summary>Junior Software Developer · Saberin Software — <sub>Dec 2024 — Apr 2025</sub></summary>
+
+- Built and deployed cloud-hosted applications across Azure and AWS, including EC2, S3, IAM, CloudFront, and Azure storage services.
+- Maintained YAML-based CI/CD pipelines in Azure DevOps and GitHub Actions to support repeatable deployments.
+- Delivered application features across APIs, configuration, and debugging workflows while collaborating directly with stakeholders.
+
+</details>
+
+<details>
+<summary>Entry Level Developer · Saberin Software — <sub>Aug 2023 — Dec 2024</sub></summary>
+
+- Used GitHub Copilot and AI agent workflows to accelerate implementation, documentation, and troubleshooting without lowering code quality.
+- Contributed to React and .NET application work, API integrations, SQL-backed flows, and production issue resolution.
+- Grew from task execution into feature ownership while balancing software delivery with a full academic schedule.
+
+</details>
+
+<details>
+<summary>Software Developer Intern · Saberin Software — <sub>May 2023 — Aug 2023</sub></summary>
+
+- Entered the team through hands-on production work with a strong focus on debugging, secure development practices, and reliability.
+- Built the foundation for the intern-to-team-lead progression by showing consistency, communication, and ownership early.
+- Worked inside established engineering workflows using Git, Visual Studio, Jira, Confluence, and team documentation standards.
+
+</details>
 
 <br/>
 
-# My Favorite IDE's:
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
-![CLion](https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white)
-![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white)
-![WebStorm](https://img.shields.io/badge/webstorm-143?style=for-the-badge&logo=webstorm&logoColor=white&color=black)
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+## Selected work
+
+**Saberin Software** <sub>— Production delivery</sub>
+Secure .NET delivery, AI integration, cloud identity work, team leadership, and shipping features that hold up in production.
+
+**VitalVues** <sub>— OpenAI application · [repo](https://github.com/LukeStrazz/VitalVues)</sub>
+An AI diet and workout planner built around the OpenAI API, prompt design, recommendation flows, and a clean user-facing experience.
+
+**StrazzTunedBuddy** <sub>— Embedded side project</sub>
+A hardware-focused project proving out C++ and embedded tinkering while still showing personality and design instinct.
 
 <br/>
 
-# Languages I'm Familiar With:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
+## Education
 
+**B.S. in Computer Science** — Farmingdale State College <sub>(Completed January 2025)</sub>
+`3.65 GPA` `President's List 2023` `Dean's List 2023 – 2024`
 
-<br/><br/><br/>
-<img align="center" width="47%" src="https://github-readme-stats.vercel.app/api?username=LukeStrazz&amp;rank_icon=github">
-<img align="center" width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LukeStrazz&layout=compact">
+<br/>
+
+## How I work
+
+`Agile development` `Client communication` `Technical documentation` `Mentorship` `Cross-functional teamwork` `Production debugging`
+
+<br/>
+
+## GitHub stats
+
+<div align="center">
+
+<img align="center" width="49%" src="https://github-readme-stats.vercel.app/api?username=LukeStrazz&rank_icon=github&show_icons=true&title_color=F7D98C&icon_color=F7D98C&text_color=ECE6D8&bg_color=00000000&border_color=8a6420&hide_border=false" alt="GitHub stats" />
+<img align="center" width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LukeStrazz&layout=compact&title_color=F7D98C&icon_color=F7D98C&text_color=ECE6D8&bg_color=00000000&border_color=8a6420&hide_border=false" alt="Top languages" />
+
+<img align="center" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=LukeStrazz&background=00000000&ring=F7D98C&fire=D4A23D&currStreakLabel=F7D98C&sideLabels=ECE6D8&currStreakNum=ECE6D8&sideNums=ECE6D8&dates=6f6a60&border=8a6420&stroke=D4A23D" alt="GitHub streak stats" />
+
+</div>
+
+<br/>
+
+<div align="center">
+<sub>Built from one shared data source — <a href="https://lukestrazz.github.io/resume.json">resume.json</a> — that also powers <a href="https://lukestrazz.github.io">lukestrazz.github.io</a>.</sub>
+</div>
