@@ -1,7 +1,8 @@
 <!--
   AUTO-GENERATED FILE — do not hand-edit.
-  Source of truth: https://lukestrazz.github.io/resume.json (public/resume.json in the
-  lukestrazz.github.io repo). Update that file — this README regenerates itself via
+  Source of truth: https://luke-angelo.com/resume.json (public/resume.json in the
+  lukestrazz.github.io repo, served via GitHub Pages under Luke's custom
+  domain). Update that file — this README regenerates itself via
   .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
   Last generated: 2026-08-11
 -->
@@ -13,7 +14,7 @@
 ![Visitors](https://komarev.com/ghpvc/?username=yLukeStrazz&color=8a6420&style=for-the-badge&label=PROFILE+VIEWS)
 [![Email](https://img.shields.io/badge/Email-0a0a0d?style=for-the-badge&logo=gmail&logoColor=F7D98C)](mailto:lukestrazzera@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0a0a0d?style=for-the-badge&logo=linkedin&logoColor=F7D98C)](https://www.linkedin.com/in/luke-angelo-strazzera-83b7171b4)
-[![Website](https://img.shields.io/badge/Portfolio-0a0a0d?style=for-the-badge&logo=firefox&logoColor=F7D98C)](https://lukestrazz.github.io)
+[![Website](https://img.shields.io/badge/Portfolio-0a0a0d?style=for-the-badge&logo=firefox&logoColor=F7D98C)](https://luke-angelo.com)
 
 </div>
 
@@ -140,5 +141,5 @@ A hardware-focused project proving out C++ and embedded tinkering while still sh
 <br/>
 
 <div align="center">
-<sub>Built from one shared data source — <a href="https://lukestrazz.github.io/resume.json">resume.json</a> — that also powers <a href="https://lukestrazz.github.io">lukestrazz.github.io</a>.</sub>
+<sub>Built from one shared data source — <a href="https://luke-angelo.com/resume.json">resume.json</a> — that also powers <a href="https://luke-angelo.com">luke-angelo.com</a>.</sub>
 </div>

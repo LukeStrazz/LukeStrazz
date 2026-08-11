@@ -3,8 +3,9 @@
  * generate-readme.mjs
  * ----------------------------------------------------------------------------
  * Regenerates README.md from a single shared data source: resume.json,
- * published from the lukestrazz.github.io repo (public/resume.json), served
- * for free off GitHub Pages. The portfolio site fetches the same file, so
+ * published from the lukestrazz.github.io repo (public/resume.json) and
+ * served at https://luke-angelo.com/resume.json via GitHub Pages under
+ * Luke's own custom domain. The portfolio site fetches the same file, so
  * editing resume.json once keeps this profile README and the website in sync.
  *
  * Usage:
@@ -17,7 +18,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const DEFAULT_SOURCE = 'https://lukestrazz.github.io/resume.json';
+const DEFAULT_SOURCE = 'https://luke-angelo.com/resume.json';
 const GOLD = { logo: 'F7D98C', bg: '0a0a0d' };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -81,8 +82,9 @@ function render(resume) {
 
   return `<!--
   AUTO-GENERATED FILE — do not hand-edit.
-  Source of truth: https://lukestrazz.github.io/resume.json (public/resume.json in the
-  lukestrazz.github.io repo). Update that file — this README regenerates itself via
+  Source of truth: ${meta.website}/resume.json (public/resume.json in the
+  lukestrazz.github.io repo, served via GitHub Pages under Luke's custom
+  domain). Update that file — this README regenerates itself via
   .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
   Last generated: ${generatedAt}
 -->
@@ -139,7 +141,7 @@ ${chipRow(resume.workingStyle)}
 <br/>
 
 <div align="center">
-<sub>Built from one shared data source — <a href="https://lukestrazz.github.io/resume.json">resume.json</a> — that also powers <a href="${meta.website}">${meta.website.replace('https://', '')}</a>.</sub>
+<sub>Built from one shared data source — <a href="${meta.website}/resume.json">resume.json</a> — that also powers <a href="${meta.website}">${meta.website.replace('https://', '')}</a>.</sub>
 </div>
 `;
 }
