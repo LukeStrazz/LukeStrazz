@@ -13,12 +13,20 @@
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
+    <!-- Doppler-style beaming: the limb sweeping toward the viewer reads hotter. -->
     <linearGradient id="ringGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8a6420" stop-opacity="0" />
-      <stop offset="18%" stop-color="#d4a23d" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#ffeebc" />
-      <stop offset="82%" stop-color="#d4a23d" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#8a6420" stop-opacity="0" />
+      <stop offset="14%" stop-color="#c9942f" stop-opacity="0.8" />
+      <stop offset="38%" stop-color="#ffe9b0" />
+      <stop offset="62%" stop-color="#fff3cf" />
+      <stop offset="86%" stop-color="#a8781f" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#6d4d17" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="hotGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffeebc" stop-opacity="0" />
+      <stop offset="50%" stop-color="#fffaf0" />
+      <stop offset="100%" stop-color="#ffeebc" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="titleGold" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -27,6 +35,17 @@
       <stop offset="75%" stop-color="#d4a23d" />
       <stop offset="100%" stop-color="#8a6420" />
     </linearGradient>
+
+    <!-- Softens the swept highlight into a specular falloff rather than a
+         hard-edged bar (a dash segment has no gradient of its own).
+         filterUnits must be userSpaceOnUse here: a <line> has a zero-height
+         bounding box, so percentage filter regions collapse to nothing. -->
+    <filter id="shineBlur" filterUnits="userSpaceOnUse" x="-600" y="-40" width="2000" height="460">
+      <feGaussianBlur stdDeviation="13" />
+    </filter>
+    <filter id="shineCoreBlur" filterUnits="userSpaceOnUse" x="-600" y="-40" width="2000" height="460">
+      <feGaussianBlur stdDeviation="4.5" />
+    </filter>
 
     <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="7" result="blur" />
@@ -40,27 +59,93 @@
       <feGaussianBlur stdDeviation="18" />
     </filter>
 
+    <!-- Softens the moving streaks so they read as luminous plasma, not dashes. -->
+    <filter id="streakBlur" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="1.6" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="hotBlur" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="3.2" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Clips the redrawn disk to the near half so bands sweep IN FRONT of the
+         event horizon. Defined inside the tilted frame so the split follows the
+         disk plane rather than the screen axis. -->
+    <clipPath id="nearHalf">
+      <rect x="-320" y="0" width="640" height="220" />
+    </clipPath>
+
+    <mask id="wordmarkMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1400" height="380">
+      <g transform="translate(80 148)" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="72" letter-spacing="1" fill="#ffffff">
+        <text x="0" y="0">LUKE‑ANGELO</text>
+        <text x="0" y="82">STRAZZERA</text>
+      </g>
+    </mask>
+
     <style>
-      /* Declarative-only: no &lt;script&gt;, so this plays fine when GitHub loads the
-         file as an &lt;img&gt; (scripting is disabled in that context, but CSS/SMIL
-         animation is not). Ring rotation itself uses SMIL animateTransform below,
-         since it needs to rotate around a specific local point (0,0) — CSS
-         transform-origin on SVG has inconsistent cross-browser behavior for that. */
-      @keyframes breathe {
-        0%, 100% { opacity: 0.5; }
-        50% { opacity: 0.82; }
+      /* GitHub strips &lt;script&gt;, but an SVG loaded via &lt;img&gt; still renders as
+         its own document with CSS and SMIL animation live — so this plays on
+         the profile page with no JS at all.
+
+         Everything animates one property — stroke-dashoffset — on purpose.
+         In an SVG-as-image document, CSS *transform* and SVG geometry
+         (x/y/width) animations do not render, so the wordmark highlight is
+         built as a travelling dash on a masked line rather than a moving
+         box. Sticking to one reliably-animatable property keeps the whole
+         banner working in that context, and keeps it fully CSS so
+         prefers-reduced-motion can switch it off. */
+
+      /* Orbital flow: dashes travel along each band's own ellipse, so inner
+         bands lap outer ones and the disk shears the way a real accretion
+         disk does — rather than the whole object spinning as one rigid piece. */
+      @keyframes flowOuter { to { stroke-dashoffset: -230; } }
+      @keyframes flowMid   { to { stroke-dashoffset: -196; } }
+      @keyframes flowIn    { to { stroke-dashoffset: -158; } }
+      @keyframes flowCore  { to { stroke-dashoffset: -114; } }
+      @keyframes flowHotA  { to { stroke-dashoffset: -316; } }
+      @keyframes flowHotB  { to { stroke-dashoffset: -332; } }
+
+      .streak { animation-timing-function: linear; animation-iteration-count: infinite; }
+      .s-outer { stroke-dasharray: 170 60; animation-name: flowOuter; animation-duration: 30s; }
+      .s-mid   { stroke-dasharray: 150 46; animation-name: flowMid;   animation-duration: 20s; }
+      .s-in    { stroke-dasharray: 120 38; animation-name: flowIn;    animation-duration: 14s; }
+      .s-core  { stroke-dasharray: 86 28;  animation-name: flowCore;  animation-duration: 8s; }
+
+      /* One short arc per ring = a bright clump orbiting the hole. */
+      .hot-a { stroke-dasharray: 16 300; animation: flowHotA 6s linear infinite; }
+      .hot-b { stroke-dasharray: 12 320; animation: flowHotB 10s linear infinite; }
+
+      @keyframes breathe { 0%, 100% { opacity: 0.5; } 50% { opacity: 0.85; } }
+      @keyframes shimmer {
+        0%, 100% { opacity: 0.35; stroke-width: 0.75; }
+        50%      { opacity: 0.9;  stroke-width: 1.6; }
       }
-      @keyframes twinkle {
-        0%, 100% { opacity: var(--peak, 0.5); }
-        50% { opacity: 0.08; }
-      }
+      @keyframes twinkle { 0%, 100% { opacity: var(--peak, 0.5); } 50% { opacity: 0.08; } }
+
       .horizon-glow { animation: breathe 6s ease-in-out infinite; }
-      .photon-ring { animation: breathe 4.5s ease-in-out infinite reverse; }
-      .star { animation: twinkle 3.2s ease-in-out infinite; }
+      .photon-ring  { animation: shimmer 4.5s ease-in-out infinite; }
+      .star         { animation: twinkle 3.2s ease-in-out infinite; }
+
+      /* Specular sweep across the wordmark: one dash travelling the length of
+         a blurred, glyph-masked line. Halo and core share a period so they
+         move as a single highlight with a soft bloom around a bright center. */
+      @keyframes sweep { to { stroke-dashoffset: -1800; } }
+      .shine { animation: sweep 7s linear infinite; }
+      .shine-core { animation-delay: -0.06s; }
 
       @media (prefers-reduced-motion: reduce) {
-        .horizon-glow, .photon-ring, .star { animation: none; }
-        .accretion-ring animate { display: none; }
+        .streak, .hot-a, .hot-b, .horizon-glow,
+        .photon-ring, .star, .shine { animation: none; }
+        .shine { opacity: 0; }
       }
     </style>
   </defs>
@@ -81,28 +166,40 @@
     <circle class="star" style="--peak:0.4; animation-delay:0.9s" cx="850" cy="310" r="1" fill="#ffeebc" opacity="0.4" />
   </g>
 
-  <!-- Saturn-ring / accretion-disk motif, black hole anchored to the right -->
+  <!-- black hole -->
   <g transform="translate(1150 195)">
     <ellipse class="horizon-glow" cx="0" cy="0" rx="230" ry="230" fill="url(#horizon)" filter="url(#wideGlow)" opacity="0.55" />
 
-    <g class="accretion-ring" transform="rotate(-18)">
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-18 0 0" to="342 0 0" dur="110s" repeatCount="indefinite" />
-      <ellipse cx="0" cy="0" rx="215" ry="56" fill="none" stroke="url(#ringGold)" stroke-width="2.5" opacity="0.85" />
-      <ellipse cx="0" cy="0" rx="175" ry="45" fill="none" stroke="url(#ringGold)" stroke-width="1.4" opacity="0.55" />
-      <ellipse cx="0" cy="0" rx="255" ry="66" fill="none" stroke="url(#ringGold)" stroke-width="1" opacity="0.35" />
+    <g transform="rotate(-18)">
+      <g id="disk" fill="none">
+        <!-- Continuous rings hold the silhouette steady... -->
+        <ellipse cx="0" cy="0" rx="255" ry="66" stroke="url(#ringGold)" stroke-width="0.8" opacity="0.22" />
+        <ellipse cx="0" cy="0" rx="215" ry="56" stroke="url(#ringGold)" stroke-width="1.1" opacity="0.3" />
+        <ellipse cx="0" cy="0" rx="175" ry="45" stroke="url(#ringGold)" stroke-width="0.9" opacity="0.24" />
+        <ellipse cx="0" cy="0" rx="118" ry="30" stroke="url(#ringGold)" stroke-width="1.2" opacity="0.32" />
+
+        <!-- ...while these streaks orbit within them at Keplerian-ish speeds. -->
+        <ellipse class="streak s-outer" cx="0" cy="0" rx="255" ry="66" stroke="url(#ringGold)" stroke-width="1.6" opacity="0.4" filter="url(#streakBlur)" />
+        <ellipse class="streak s-mid" cx="0" cy="0" rx="215" ry="56" stroke="url(#ringGold)" stroke-width="3" opacity="0.9" filter="url(#streakBlur)" />
+        <ellipse class="streak s-in" cx="0" cy="0" rx="175" ry="45" stroke="url(#ringGold)" stroke-width="2" opacity="0.6" filter="url(#streakBlur)" />
+        <ellipse class="hot-b" cx="0" cy="0" rx="196" ry="51" stroke="url(#hotGold)" stroke-width="3.4" opacity="0.9" filter="url(#hotBlur)" />
+        <ellipse class="streak s-core" cx="0" cy="0" rx="118" ry="30" stroke="url(#ringGold)" stroke-width="3.4" opacity="1" filter="url(#streakBlur)" />
+        <ellipse class="hot-a" cx="0" cy="0" rx="129" ry="33" stroke="url(#hotGold)" stroke-width="4.2" opacity="0.95" filter="url(#hotBlur)" />
+      </g>
     </g>
 
+    <!-- Event horizon. -->
     <circle cx="0" cy="0" r="72" fill="#030303" filter="url(#softGlow)" />
     <circle cx="0" cy="0" r="72" fill="#000000" />
     <circle class="photon-ring" cx="0" cy="0" r="73" fill="none" stroke="#ffeebc" stroke-width="0.75" opacity="0.5" />
 
-    <g class="accretion-ring" transform="rotate(-18)">
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-18 0 0" to="342 0 0" dur="110s" repeatCount="indefinite" />
-      <ellipse cx="0" cy="0" rx="118" ry="30" fill="none" stroke="url(#ringGold)" stroke-width="3" opacity="0.95" />
+    <!-- Near half redrawn on top, so the same material sweeps in front. -->
+    <g transform="rotate(-18)">
+      <use href="#disk" clip-path="url(#nearHalf)" />
     </g>
   </g>
 
-  <!-- Wordmark -->
+  <!-- wordmark -->
   <g transform="translate(80 148)">
     <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="72" letter-spacing="1" fill="url(#titleGold)">
       LUKE‑ANGELO
@@ -114,5 +211,20 @@
       SOFTWARE ENGINEER · AI · CLOUD · FULL-STACK
     </text>
     <rect x="4" y="146" width="220" height="2" fill="#d4a23d" opacity="0.6" />
+  </g>
+
+  <!-- Specular sweep, masked to the glyphs so only the metal catches light.
+       Built from a travelling dash rather than a moving box: stroke-dashoffset
+       is the one property that reliably animates in an SVG-as-image document
+       (CSS transform and geometry properties do not render there). The line is
+       1800 units long with a matching dash period, so exactly one bright
+       segment crosses the wordmark per cycle, with a natural pause between. -->
+  <g mask="url(#wordmarkMask)">
+    <line class="shine shine-halo" x1="-500" y1="162" x2="1300" y2="162"
+          stroke="#fff0c8" stroke-width="300" stroke-dasharray="200 1600"
+          filter="url(#shineBlur)" opacity="0.6" />
+    <line class="shine shine-core" x1="-500" y1="162" x2="1300" y2="162"
+          stroke="#ffffff" stroke-width="300" stroke-dasharray="64 1736"
+          filter="url(#shineCoreBlur)" opacity="1" />
   </g>
 </svg>
