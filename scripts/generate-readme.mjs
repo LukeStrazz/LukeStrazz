@@ -75,14 +75,6 @@ function renderTechBadges(techBadges) {
     .join('\n\n');
 }
 
-function statsBlock(username) {
-  const theme = `title_color=${GOLD.logo}&icon_color=${GOLD.logo}&text_color=ECE6D8&bg_color=00000000&border_color=8a6420&hide_border=false`;
-  return [
-    `<img align="center" width="49%" src="https://github-readme-stats.vercel.app/api?username=${username}&rank_icon=github&show_icons=true&${theme}" alt="GitHub stats" />`,
-    `<img align="center" width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&${theme}" alt="Top languages" />`
-  ].join('\n');
-}
-
 function streakBlock(username) {
   const theme = `background=00000000&ring=${GOLD.logo}&fire=D4A23D&currStreakLabel=${GOLD.logo}&sideLabels=ECE6D8&currStreakNum=ECE6D8&sideNums=ECE6D8&dates=6f6a60&border=8a6420&stroke=D4A23D`;
   return `<img align="center" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=${username}&${theme}" alt="GitHub streak stats" />`;
@@ -113,7 +105,7 @@ function render(resume) {
 
 ### ${meta.summary}
 
-**${meta.role}** at **${meta.company}**${meta.roleStatus ? ` <sub>(${meta.roleStatus})</sub>` : ''}
+**${meta.role}** at **${meta.company}**
 
 ${resume.quickFacts.map((fact) => `- **${fact.label}:** ${fact.value}`).join('\n')}
 
@@ -154,8 +146,6 @@ ${chipRow(resume.workingStyle)}
 ## GitHub stats
 
 <div align="center">
-
-${statsBlock(meta.github)}
 
 ${streakBlock(meta.github)}
 

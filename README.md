@@ -17,12 +17,12 @@
 
 </div>
 
-### Software engineer building secure applications, modern interfaces, and production-ready systems — joining the U.S. Department of the Treasury as an IT Specialist (AI) on August 31, 2026, after leading full-stack and cloud delivery at Saberin Software.
+### Software engineer building secure applications, modern interfaces, and production-ready systems — now bringing that full-stack and cloud delivery background to AI strategy and governance at the U.S. Department of the Treasury.
 
-**IT Specialist (AI)** at **U.S. Department of the Treasury** <sub>(Incoming — starts Aug 31, 2026)</sub>
+**IT Specialist (AI)** at **U.S. Department of the Treasury**
 
-- **Incoming Role:** IT Specialist (AI) · U.S. Dept. of the Treasury — starts Aug 31, 2026
-- **Current Role:** Developer Team Lead · Saberin Software
+- **Agency:** U.S. Department of the Treasury — Departmental Offices
+- **Focus:** AI governance, secure systems, cloud delivery, full-stack
 - **Trajectory:** Intern to team lead to federal AI specialist since 2023
 
 <br/>
@@ -70,7 +70,7 @@
 ## Experience
 
 **IT Specialist (AI)** · U.S. Department of the Treasury — Departmental Offices
-<sub>Starting Aug 31, 2026</sub>
+<sub>Aug 2026 — Present</sub>
 
 - Formulating technical strategies, standards, and architectures that advance the secure and ethical deployment of AI across Treasury and, by extension, the federal government.
 - Ensuring Treasury's systems meet mission, cybersecurity, and performance requirements using Agile, DevSecOps, and Digital Engineering best practices.
@@ -143,9 +143,6 @@ A hardware-focused project proving out C++ and embedded tinkering while still sh
 ## GitHub stats
 
 <div align="center">
-
-<img align="center" width="49%" src="https://github-readme-stats.vercel.app/api?username=LukeStrazz&rank_icon=github&show_icons=true&title_color=F7D98C&icon_color=F7D98C&text_color=ECE6D8&bg_color=00000000&border_color=8a6420&hide_border=false" alt="GitHub stats" />
-<img align="center" width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LukeStrazz&layout=compact&title_color=F7D98C&icon_color=F7D98C&text_color=ECE6D8&bg_color=00000000&border_color=8a6420&hide_border=false" alt="Top languages" />
 
 <img align="center" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=LukeStrazz&background=00000000&ring=F7D98C&fire=D4A23D&currStreakLabel=F7D98C&sideLabels=ECE6D8&currStreakNum=ECE6D8&sideNums=ECE6D8&dates=6f6a60&border=8a6420&stroke=D4A23D" alt="GitHub streak stats" />
 
