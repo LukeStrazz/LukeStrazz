@@ -17,13 +17,13 @@
 
 </div>
 
-### Software engineer building secure applications, modern interfaces, and production-ready systems — across C#, .NET, React, Azure, AWS, and OpenAI-powered workflows.
+### Software engineer building secure applications, modern interfaces, and production-ready systems — joining the U.S. Department of the Treasury as an IT Specialist (AI) on August 31, 2026, after leading full-stack and cloud delivery at Saberin Software.
 
-**Developer Team Lead** at **Saberin Software**
+**IT Specialist (AI)** at **U.S. Department of the Treasury** <sub>(Incoming — starts Aug 31, 2026)</sub>
 
+- **Incoming Role:** IT Specialist (AI) · U.S. Dept. of the Treasury — starts Aug 31, 2026
 - **Current Role:** Developer Team Lead · Saberin Software
-- **Focus:** AI features, cloud delivery, identity, full-stack
-- **Trajectory:** Intern to team lead since 2023
+- **Trajectory:** Intern to team lead to federal AI specialist since 2023
 
 <br/>
 
@@ -69,12 +69,21 @@
 
 ## Experience
 
-**Developer Team Lead** · Saberin Software
-<sub>Apr 2025 — Present</sub>
+**IT Specialist (AI)** · U.S. Department of the Treasury — Departmental Offices
+<sub>Starting Aug 31, 2026</sub>
+
+- Formulating technical strategies, standards, and architectures that advance the secure and ethical deployment of AI across Treasury and, by extension, the federal government.
+- Ensuring Treasury's systems meet mission, cybersecurity, and performance requirements using Agile, DevSecOps, and Digital Engineering best practices.
+- Bringing a full-stack and cloud engineering background — Azure OpenAI delivery, cloud identity, and production systems — into federal AI strategy and governance work.
+
+<details>
+<summary>Developer Team Lead · Saberin Software — <sub>Apr 2025 — Aug 2026</sub></summary>
 
 - Lead production development for .NET applications, reviewing code for quality, security, performance, and long-term maintainability.
 - Designed and shipped AI-powered features using Azure OpenAI for both internal workflows and customer-facing experiences.
 - Own Azure delivery across subscriptions, Entra ID, Azure AD B2C, app registrations, Blob Storage, and Data Factory resources.
+
+</details>
 
 <details>
 <summary>Junior Software Developer · Saberin Software — <sub>Dec 2024 — Apr 2025</sub></summary>
