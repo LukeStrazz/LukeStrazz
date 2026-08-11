@@ -104,7 +104,7 @@ function render(resume) {
 
 <img src="./assets/banner.svg" width="100%" alt="${meta.name} — ${meta.title}" />
 
-![Visitors](https://komarev.com/ghpvc/?username=${meta.github}&color=8a6420&style=for-the-badge&label=PROFILE+VIEWS)
+![Visitors](https://komarev.com/ghpvc/?username=${meta.viewCounterId}&color=8a6420&style=for-the-badge&label=PROFILE+VIEWS)
 [![Email](https://img.shields.io/badge/Email-${GOLD.bg}?style=for-the-badge&logo=gmail&logoColor=${GOLD.logo})](mailto:${meta.email})
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-${GOLD.bg}?style=for-the-badge&logo=linkedin&logoColor=${GOLD.logo})](${meta.linkedin})
 [![Website](https://img.shields.io/badge/Portfolio-${GOLD.bg}?style=for-the-badge&logo=firefox&logoColor=${GOLD.logo})](${meta.website})
