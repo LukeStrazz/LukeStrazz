@@ -75,11 +75,6 @@ function renderTechBadges(techBadges) {
     .join('\n\n');
 }
 
-function streakBlock(username) {
-  const theme = `background=00000000&ring=${GOLD.logo}&fire=D4A23D&currStreakLabel=${GOLD.logo}&sideLabels=ECE6D8&currStreakNum=ECE6D8&sideNums=ECE6D8&dates=6f6a60&border=8a6420&stroke=D4A23D`;
-  return `<img align="center" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=${username}&${theme}" alt="GitHub streak stats" />`;
-}
-
 function render(resume) {
   const { meta } = resume;
   const generatedAt = new Date().toISOString().slice(0, 10);
@@ -140,16 +135,6 @@ ${resume.education
 ## How I work
 
 ${chipRow(resume.workingStyle)}
-
-<br/>
-
-## GitHub stats
-
-<div align="center">
-
-${streakBlock(meta.github)}
-
-</div>
 
 <br/>
 

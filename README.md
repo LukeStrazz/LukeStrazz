@@ -140,16 +140,6 @@ A hardware-focused project proving out C++ and embedded tinkering while still sh
 
 <br/>
 
-## GitHub stats
-
-<div align="center">
-
-<img align="center" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=LukeStrazz&background=00000000&ring=F7D98C&fire=D4A23D&currStreakLabel=F7D98C&sideLabels=ECE6D8&currStreakNum=ECE6D8&sideNums=ECE6D8&dates=6f6a60&border=8a6420&stroke=D4A23D" alt="GitHub streak stats" />
-
-</div>
-
-<br/>
-
 <div align="center">
 <sub>Built from one shared data source — <a href="https://lukestrazz.github.io/resume.json">resume.json</a> — that also powers <a href="https://lukestrazz.github.io">lukestrazz.github.io</a>.</sub>
 </div>
