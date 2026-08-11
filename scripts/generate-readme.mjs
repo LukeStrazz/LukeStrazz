@@ -61,11 +61,16 @@ function renderExperience(entries) {
     .join('\n\n');
 }
 
-function renderProjects(projects) {
+function renderProjects(projects, site) {
   return projects
     .map((project) => {
-      const link = project.repo ? ` · [repo](${project.repo})` : '';
-      return `**${project.title}** <sub>— ${project.label}${link}</sub>\n${project.text}`;
+      // Detail pages live on the site; `page` is a site-relative path.
+      const links = [
+        project.page ? `[details](${site}${project.page})` : null,
+        project.repo ? `[repo](${project.repo})` : null
+      ].filter(Boolean);
+      const suffix = links.length ? ` · ${links.join(' · ')}` : '';
+      return `**${project.title}** <sub>— ${project.label}${suffix}</sub>\n${project.text}`;
     })
     .join('\n\n');
 }
@@ -122,7 +127,7 @@ ${renderExperience(resume.experience)}
 
 ## Selected work
 
-${renderProjects(resume.projects)}
+${renderProjects(resume.projects, meta.website)}
 
 <br/>
 

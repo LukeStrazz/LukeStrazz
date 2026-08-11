@@ -116,14 +116,20 @@
 
 ## Selected work
 
+**StrazzTunedBuddy** <sub>— Open-source hardware · 105★ · [details](https://luke-angelo.com/projects/strazztunedbuddy/) · [repo](https://github.com/LukeStrazz/StrazzTunedBuddy)</sub>
+An Arduino driving companion with procedurally drawn expressions on a 128x64 OLED — the most-starred and most-forked project on my GitHub.
+
+**VitalVues** <sub>— OpenAI application · [details](https://luke-angelo.com/projects/vitalvues/) · [repo](https://github.com/LukeStrazz/VitalVues)</sub>
+A senior capstone that explains bloodwork results in plain language, then builds diet and workout guidance from the user's own markers.
+
+**WHIM** <sub>— Private · .NET 9 product · [details](https://luke-angelo.com/projects/whim/)</sub>
+A clean-architecture .NET 9 solution with PostgreSQL, containerised services, and cross-platform mobile clients.
+
+**Strazz Robinhood MCP** <sub>— Private · MCP server · [details](https://luke-angelo.com/projects/strazz-robinhood-mcp/)</sub>
+A Model Context Protocol server exposing brokerage research and risk-managed, paper-trading-by-default execution to AI clients.
+
 **Saberin Software** <sub>— Production delivery</sub>
 Secure .NET delivery, AI integration, cloud identity work, team leadership, and shipping features that hold up in production.
-
-**VitalVues** <sub>— OpenAI application · [repo](https://github.com/LukeStrazz/VitalVues)</sub>
-An AI diet and workout planner built around the OpenAI API, prompt design, recommendation flows, and a clean user-facing experience.
-
-**StrazzTunedBuddy** <sub>— Embedded side project</sub>
-A hardware-focused project proving out C++ and embedded tinkering while still showing personality and design instinct.
 
 <br/>
 
