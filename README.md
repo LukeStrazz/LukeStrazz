@@ -10,7 +10,7 @@
 
 <img src="./assets/banner.svg" width="100%" alt="Luke‑Angelo Strazzera — Software Engineer" />
 
-![Visitors](https://komarev.com/ghpvc/?username=yLukeStrazz&color=8a6420&style=for-the-badge&label=PROFILE+VIEWS)
+![Visitors](https://komarev.com/ghpvc/?username=undefined&color=8a6420&style=for-the-badge&label=PROFILE+VIEWS)
 [![Email](https://img.shields.io/badge/Email-0a0a0d?style=for-the-badge&logo=gmail&logoColor=F7D98C)](mailto:lukestrazzera@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0a0a0d?style=for-the-badge&logo=linkedin&logoColor=F7D98C)](https://www.linkedin.com/in/luke-angelo-strazzera-83b7171b4)
 [![Website](https://img.shields.io/badge/Portfolio-0a0a0d?style=for-the-badge&logo=firefox&logoColor=F7D98C)](https://lukestrazz.github.io)
