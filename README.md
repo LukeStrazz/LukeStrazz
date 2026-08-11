@@ -69,8 +69,7 @@
 
 ## Experience
 
-**IT Specialist (AI)** · U.S. Department of the Treasury — Departmental Offices
-<sub>Aug 2026 — Present</sub>
+**IT Specialist (AI)** · U.S. Department of the Treasury — Departmental Offices<br/><sub>Aug 2026 — Present</sub>
 
 - Formulating technical strategies, standards, and architectures that advance the secure and ethical deployment of AI across Treasury and, by extension, the federal government.
 - Ensuring Treasury's systems meet mission, cybersecurity, and performance requirements using Agile, DevSecOps, and Digital Engineering best practices.

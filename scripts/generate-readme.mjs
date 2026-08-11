@@ -50,7 +50,7 @@ function renderExperience(entries) {
   return entries
     .map((entry, index) => {
       const points = entry.points.map((point) => `- ${point}`).join('\n');
-      const header = `**${entry.role}** · ${entry.company}\n<sub>${entry.dates}</sub>`;
+      const header = `**${entry.role}** · ${entry.company}<br/><sub>${entry.dates}</sub>`;
       // Keep the current role expanded, collapse the rest to keep the README scannable.
       if (index === 0) {
         return `${header}\n\n${points}`;
