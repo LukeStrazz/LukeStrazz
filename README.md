@@ -4,7 +4,7 @@
   lukestrazz.github.io repo, served via GitHub Pages under Luke's custom
   domain). Update that file — this README regenerates itself via
   .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
-  Last generated: 2026-08-16
+  Last generated: 2026-08-17
 -->
 
 <div align="center">
