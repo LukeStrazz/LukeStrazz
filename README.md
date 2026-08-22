@@ -4,7 +4,7 @@
   lukestrazz.github.io repo, served via GitHub Pages under Luke's custom
   domain). Update that file — this README regenerates itself via
   .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
-  Last generated: 2026-08-21
+  Last generated: 2026-08-22
 -->
 
 <div align="center">
@@ -20,7 +20,7 @@
 
 ### Software engineer building secure applications, modern interfaces, and production-ready systems — now bringing that full-stack and cloud delivery background to AI strategy and governance.
 
-**IT Specialist (AI)** at **undefined**
+**IT Specialist (AI)**
 
 - **Focus:** AI governance, secure systems, cloud delivery, full-stack
 - **Trajectory:** Intern to team lead to federal AI specialist since 2023

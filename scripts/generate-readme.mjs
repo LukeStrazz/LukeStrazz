@@ -107,7 +107,7 @@ function render(resume) {
 
 ### ${meta.summary}
 
-**${meta.role}** at **${meta.company}**
+${meta.company ? `**${meta.role}** at **${meta.company}**` : `**${meta.role}**`}
 
 ${resume.quickFacts.map((fact) => `- **${fact.label}:** ${fact.value}`).join('\n')}
 
