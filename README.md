@@ -18,12 +18,12 @@
 
 </div>
 
-### Software engineer building secure applications, modern interfaces, and production-ready systems — now bringing that full-stack and cloud delivery background to AI strategy and governance.
+### Software engineer building secure applications, modern interfaces, and production-ready systems across C#, .NET, React, Azure, AWS, and AI-powered workflows.
 
-**IT Specialist (AI)**
+**Software Engineer**
 
 - **Focus:** AI governance, secure systems, cloud delivery, full-stack
-- **Trajectory:** Intern to team lead to federal AI specialist since 2023
+- **Trajectory:** Intern to team lead since 2023
 
 <br/>
 
