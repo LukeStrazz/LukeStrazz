@@ -3,7 +3,7 @@
   Source of truth: https://luke-angelo.com/resume.json (public/resume.json in the
   lukestrazz.github.io repo). Update that file — this README regenerates
   itself via .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
-  Data last updated: 2026-08-11
+  Data last updated: 2026-09-30
 -->
 
 <div align="center">
@@ -17,12 +17,12 @@
 
 </div>
 
-### Software engineer building secure applications, modern interfaces, and production-ready systems across C#, .NET, React, Azure, AWS, and AI-powered workflows.
+### AI engineer who builds secure, production-grade systems end to end: PostgreSQL reporting, cloud infrastructure, identity and access control, and the interfaces people actually use. Went from intern to team lead in under two years.
 
-**Software Engineer**
+**AI Engineer**
 
 - **Focus:** AI governance, secure systems, cloud delivery, full-stack
-- **Trajectory:** Intern to team lead since 2023
+- **Trajectory:** Intern to team lead in under two years, now AI engineer
 
 <br/>
 
@@ -30,6 +30,7 @@
 
 **Platforms & Tools**
 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0a0a0d?style=for-the-badge&logo=postgresql&logoColor=F7D98C)
 ![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-0a0a0d?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=F7D98C)
 ![Figma](https://img.shields.io/badge/Figma-0a0a0d?style=for-the-badge&logo=figma&logoColor=F7D98C)
 ![Jira](https://img.shields.io/badge/Jira-0a0a0d?style=for-the-badge&logo=jira&logoColor=F7D98C)
@@ -38,9 +39,11 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0a0a0d?style=for-the-badge&logo=githubactions&logoColor=F7D98C)
 ![Azure](https://img.shields.io/badge/Azure-0a0a0d?style=for-the-badge&logo=microsoftazure&logoColor=F7D98C)
 ![AWS](https://img.shields.io/badge/AWS-0a0a0d?style=for-the-badge&logo=amazonaws&logoColor=F7D98C)
+![Terraform](https://img.shields.io/badge/Terraform-0a0a0d?style=for-the-badge&logo=terraform&logoColor=F7D98C)
 
 **Languages & Frameworks**
 
+![Go](https://img.shields.io/badge/Go-0a0a0d?style=for-the-badge&logo=go&logoColor=F7D98C)
 ![C#](https://img.shields.io/badge/C%23-0a0a0d?style=for-the-badge&logo=c-sharp&logoColor=F7D98C)
 ![.NET](https://img.shields.io/badge/.NET-0a0a0d?style=for-the-badge&logo=.net&logoColor=F7D98C)
 ![C++](https://img.shields.io/badge/C%2B%2B-0a0a0d?style=for-the-badge&logo=c%2B%2B&logoColor=F7D98C)
@@ -50,6 +53,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-0a0a0d?style=for-the-badge&logo=html5&logoColor=F7D98C)
 ![CSS3](https://img.shields.io/badge/CSS3-0a0a0d?style=for-the-badge&logo=css3&logoColor=F7D98C)
 ![SQL](https://img.shields.io/badge/SQL-0a0a0d?style=for-the-badge&logo=postgresql&logoColor=F7D98C)
+![Vue.js](https://img.shields.io/badge/Vue.js-0a0a0d?style=for-the-badge&logo=vuedotjs&logoColor=F7D98C)
 
 **AI & Automation**
 
@@ -68,11 +72,22 @@
 
 ## Experience
 
-**Developer Team Lead** · Saberin Software<br/><sub>Apr 2025 — Aug 2026</sub>
+**AI Engineer** · U.S. Department of the Treasury — TCSC<br/><sub>Aug 2026 — Present</sub>
 
-- Lead production development for .NET applications, reviewing code for quality, security, performance, and long-term maintainability.
-- Designed and shipped AI-powered features using Azure OpenAI for both internal workflows and customer-facing experiences.
-- Own Azure delivery across subscriptions, Entra ID, Azure AD B2C, app registrations, Blob Storage, and Data Factory resources.
+- Build and ship full-stack features across multiple applications in Go, TypeScript, React, Vue, and SQL, from API and data-layer design through the interfaces people use.
+- Design and optimize complex PostgreSQL queries for reporting and analytics, with timezone-aware date windows, repeatable-read consistency, scoped access, and CSV/PDF export.
+- Implement RBAC, CAIA/OIDC authentication, data isolation, and audit controls so every user reaches only the data they are permitted to; hardened exports against spreadsheet formula injection.
+- Maintain AWS infrastructure in Terraform across ECS, ECR, SES, CloudFront, ALB, IAM, and private networking, and supported a migration to new managed AWS infrastructure.
+- Accelerate delivery with Codex, GitHub Copilot, and AI agent workflows, and ship through GitHub Actions CI/CD backed by unit, integration, accessibility, and browser-based regression testing.
+
+<details>
+<summary>Developer Team Lead · Saberin Software — <sub>Apr 2025 — Aug 2026</sub></summary>
+
+- Led production development for .NET applications, reviewing code for quality, security, performance, and long-term maintainability.
+- Designed and shipped AI-powered features with Azure OpenAI for both internal workflows and customer-facing experiences.
+- Owned Azure delivery across subscriptions, Entra ID, Azure AD B2C, app registrations, Blob Storage, and Data Factory.
+
+</details>
 
 <details>
 <summary>Junior Software Developer · Saberin Software — <sub>Dec 2024 — Apr 2025</sub></summary>
@@ -95,8 +110,7 @@
 <details>
 <summary>Software Developer Intern · Saberin Software — <sub>May 2023 — Aug 2023</sub></summary>
 
-- Entered the team through hands-on production work with a strong focus on debugging, secure development practices, and reliability.
-- Built the foundation for the intern-to-team-lead progression by showing consistency, communication, and ownership early.
+- Started on hands-on production work, focused on debugging, secure development practices, and reliability.
 - Worked inside established engineering workflows using Git, Visual Studio, Jira, Confluence, and team documentation standards.
 
 </details>
