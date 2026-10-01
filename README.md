@@ -1,10 +1,9 @@
 <!--
   AUTO-GENERATED FILE — do not hand-edit.
   Source of truth: https://luke-angelo.com/resume.json (public/resume.json in the
-  lukestrazz.github.io repo, served via GitHub Pages under Luke's custom
-  domain). Update that file — this README regenerates itself via
-  .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
-  Last generated: 2026-10-01
+  lukestrazz.github.io repo). Update that file — this README regenerates
+  itself via .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
+  Data last updated: 2026-08-11
 -->
 
 <div align="center">
