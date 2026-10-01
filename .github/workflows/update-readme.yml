@@ -2,9 +2,15 @@ name: Sync README from resume.json
 
 on:
   schedule:
-    # Daily at 09:00 UTC — picks up any resume.json edits even without a manual trigger.
+    # Fallback only: the site's deploy dispatches this workflow after every
+    # publish. Daily at 09:00 UTC catches anything that slipped through.
     - cron: '0 9 * * *'
   workflow_dispatch:
+    inputs:
+      source:
+        description: resume.json URL to build from (defaults to the live site)
+        required: false
+        default: ''
   push:
     paths:
       - scripts/generate-readme.mjs
@@ -26,7 +32,11 @@ jobs:
           node-version: 20
 
       - name: Regenerate README.md from resume.json
-        run: node scripts/generate-readme.mjs
+        # Passed through env, not interpolated into the script, so the input
+        # can't inject shell.
+        env:
+          SOURCE: ${{ inputs.source }}
+        run: node scripts/generate-readme.mjs ${SOURCE:+"$SOURCE"}
 
       - name: Commit if changed
         run: |

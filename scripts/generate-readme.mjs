@@ -4,9 +4,13 @@
  * ----------------------------------------------------------------------------
  * Regenerates README.md from a single shared data source: resume.json,
  * published from the lukestrazz.github.io repo (public/resume.json) and
- * served at https://luke-angelo.com/resume.json via GitHub Pages under
- * Luke's own custom domain. The portfolio site fetches the same file, so
- * editing resume.json once keeps this profile README and the website in sync.
+ * served at https://luke-angelo.com/resume.json. The portfolio site fetches
+ * the same file, so editing resume.json once keeps this profile README and the
+ * website in sync.
+ *
+ * The site's deploy workflow dispatches update-readme.yml with the exact build
+ * it just published, so the README follows within minutes of a push; the daily
+ * schedule is the fallback.
  *
  * Usage:
  *   node scripts/generate-readme.mjs                       # fetch the live URL
@@ -83,15 +87,16 @@ function renderTechBadges(techBadges) {
 
 function render(resume) {
   const { meta } = resume;
-  const generatedAt = new Date().toISOString().slice(0, 10);
+  // The data's own date, not today's: a run that changes nothing must produce
+  // an identical file, or the workflow commits a no-op every day.
+  const updatedAt = meta.updatedAt ?? 'unknown';
 
   return `<!--
   AUTO-GENERATED FILE — do not hand-edit.
   Source of truth: ${meta.website}/resume.json (public/resume.json in the
-  lukestrazz.github.io repo, served via GitHub Pages under Luke's custom
-  domain). Update that file — this README regenerates itself via
-  .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
-  Last generated: ${generatedAt}
+  lukestrazz.github.io repo). Update that file — this README regenerates
+  itself via .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
+  Data last updated: ${updatedAt}
 -->
 
 <div align="center">
