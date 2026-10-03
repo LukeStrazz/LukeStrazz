@@ -3,7 +3,7 @@
   Source of truth: https://luke-angelo.com/resume.json (public/resume.json in the
   lukestrazz.github.io repo). Update that file — this README regenerates
   itself via .github/workflows/update-readme.yml (scripts/generate-readme.mjs).
-  Data last updated: 2026-09-30
+  Data last updated: 2026-10-02
 -->
 
 <div align="center">
@@ -17,7 +17,7 @@
 
 </div>
 
-### AI engineer who builds secure, production-grade systems end to end: PostgreSQL reporting, cloud infrastructure, identity and access control, and the interfaces people actually use. Went from intern to team lead in under two years.
+### AI Engineer who designs and delivers secure, production-grade systems end to end, with a focus on solutions architecture. Went from intern to team lead in under two years. Passionate about guiding customers through complex technical decisions and turning requirements into scalable architectures.
 
 **AI Engineer**
 
